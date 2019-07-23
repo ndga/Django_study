@@ -102,7 +102,12 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
 
 # 忽略某些文件（夹）
 .idea/
-
+start_venv/
