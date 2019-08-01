@@ -11,6 +11,18 @@
 
     {% include "django_templates/first.html" %}
 
+    {{ title }}
+    {{ title|safe }}
+    {% autoescape off %}
+        {{ title }}
+        {{ title }}
+        {{ title }}
+        {{ title }}
+        {{ title }}
+    {% endautoescape %}
+
+    {{ body|default:"nothing" }}
+
     <h2 class="sub-header">Section title</h2>
     <div class="table-responsive">
         <table class="table table-striped">

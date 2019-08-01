@@ -1,3 +1,5 @@
+{% load staticfiles %}
+{% load custom_tag %}
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -15,14 +17,14 @@
     <title>{% block title %}Dashboard Template for Bootstrap{% endblock %}</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/static/django_templates/django_html_files/bootstrap.css" rel="stylesheet">
+    <link href="{% mystatic 'django_templates/django_html_files/bootstrap.css' %}" rel="stylesheet">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="/static/django_templates/django_html_files/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="{% static 'django_templates/django_html_files/ie10-viewport-bug-workaround.css' %}" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="/static/django_templates/django_html_files/dashboard.css" rel="stylesheet">
+    <link href="{% static 'django_templates/django_html_files/dashboard.css' %}" rel="stylesheet">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="/static/django_templates/django_html_files/ie-emulation-modes-warning.js"></script>
+    <script src="{% static 'django_templates/django_html_files/ie-emulation-modes-warning.js' %}"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -92,13 +94,13 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="/static/django_templates/django_templates/django_html_files/jquery.js"></script>
+<script src="{% static 'django_templates/django_html_files/jquery.js' %}"></script>
 <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-<script src="/static/django_templates/django_templates/django_html_files/bootstrap.js"></script>
+<script src="{% static 'django_templates/django_html_files/bootstrap.js' %}"></script>
 <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-<script src="/static/django_templates/django_templates/django_html_files/holder.js"></script>
+<script src="{% static 'django_templates/django_html_files/holder.js' %}"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="/static/django_templates/django_templates/django_html_files/ie10-viewport-bug-workaround.js"></script>
+<script src="{% static 'django_templates/django_html_files/ie10-viewport-bug-workaround.js' %}"></script>
 
 
 </body>
